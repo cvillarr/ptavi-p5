@@ -160,10 +160,12 @@ dirección SIP?
 
 * ¿Cuál es la periodicidad de los paquetes (en origen; nota que la
 captura es en destino)?
-	La periodicidad de los paquetes es de 
+	La periodicidad de los paquetes es de 0.02 
 
 * ¿Cuántos bits/segundo se envı́an?
-	
+	Se envían 64kbps
+		
+
 [Al terminar el ejercicio es recomendable hacer commit de los ficheros modificados]
 
 12. Vamos a ver más a fondo el intercambio RTP. En Telephony hay una
