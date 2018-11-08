@@ -217,13 +217,24 @@ esa llamada y pulsa el botón Graph.
 
 15. Identifica la trama donde se finaliza la conversación.
 * ¿Qué método SIP se utiliza?
+	Se utiliza el método SIP BYE. 
+
 * ¿En qué trama(s)?
+	En las tramas 924, 925, 927 y 933.
+
 * ¿Por qué crees que se envı́a varias veces?
+	Porque tiene prisa por cerrar la conversación y cuantas mas veces lo envíe hay más probabilidad de que le llegue y que se pueda cerrar la conversación antes. 
 
 16. Finalmente, se cierra la aplicación de VozIP.
 * ¿Por qué aparece una instrucción SIP del tipo REGISTER?
+	Aparece de nuevo el REGISTER para dar de baja al usuario registrado, para saber que le da de baja observamos que el campo expires está a 0. 
+
 * ¿En qué trama sucede esto?
+	Se hacen en 2 tramas distintas, ya que se intenta una primera vez en la trama 950 pero se le solicita una autorización por lo que se vuelve a enviar ya con la autorización en la trama 952.
+
 * ¿En qué se diferencia con la instrucción que se utilizó con anterioridad (al principio de la sesión)?
+	Se diferencia en que en este caso el Expires está a 0.
+
 [Al terminar el ejercicio es recomendable hacer commit de los ficheros modificados]
 
 Captura de una sesión SIP
